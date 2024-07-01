@@ -1,14 +1,25 @@
-import React, { useState } from 'react'
+import React from 'react'
 import "../index.css"
 import { Link } from 'react-router-dom'
 
 const Homepage = () => {
   return (
-    <section className='p-5 bg-cover bg-hero bg-center h-screen align-middle mt-10'>
-        <h1 className='text-4xl font-black text-gray-900' >Welcome to Suleman Catering Services </h1>
-        <h2 className="text-xl  text-gray-800 mt-5">Are you looking for someone to cook delcious meals for your party</h2>
-        <p className='text-lg text-gray-700 mt-5'>Well look no more because you came to the right place. W'ill prepare tasty meals that will blow your minds away</p>
-        <Link to="/catering"><button className='mt-5 rounded-md w-[200px] h-[35px] bg-gray-700 text-zinc-100'>Catering Options</button></Link>
+    <section className='font-sans flex justify-center items-center align-middle mt-10'>
+        <div className='p-5 lg:w-[50%] md:w-[30%] sm:w-[80%]'>
+          <h1 className='text-4xl font-black text-gray-900' >Welcome to Suleman Catering Services </h1>
+        
+          <p className='italic text-lg text-gray-700 mt-5'><span className='text-3xl'>"</span> At Suleman Caters, we bring a blend of culinary mastery and exceptional service to cater to your every event need in Rawalpindi. Whether you're planning a 
+          wedding, corporate gathering, or a special celebration, 
+          our commitment to quality and attention to detail ensures an 
+          unforgettable dining experience. With a menu inspired by Pakistani flavors and 
+          crafted with care, Suleman Caters promises to elevate your event with delectable dishes
+           and impeccable service. Allow us to make your occasion a memorable one with our passion 
+           for hospitality and delicious cuisine.<span className='text-3xl'>"</span> </p>
+          <Link to="/catering"><button className='mt-5 rounded-md w-[200px] h-[39px] bg-gray-900 text-zinc-100'>Catering Options</button></Link>
+        </div>
+        <div className='lg:w-[50%] md:w-[70%] sm:w-[80%]'>
+          <img className='rounded-md' src="\assets\louis-hansel-adYREqRdHCs-unsplash.jpg" alt="chiefs" />
+        </div>
     </section>
   )
 }

@@ -1,16 +1,18 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink,Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <header className="flex justify-center mt-5">
-      <div>
-        <h3 className="text-2xl  font-black">Suleman Caters</h3>
-      </div>
+    <header className="flex justify-center font-serif mt-5">
+      <Link to="/">
+        <div>
+          <h3 className="text-2xl  font-normal">Suleman Caters</h3>
+        </div>
+      </Link>
       <nav className="mt-1.5 ml-16">
         <NavLink
              className={({ isActive}) =>
-              `ml-5 ${isActive ? "active" : "" }  `
+              `ml-5 ${isActive ? "underline" : "" }  `
              }
           to="/"
         >
@@ -18,7 +20,7 @@ const Navbar = () => {
         </NavLink>
         <NavLink
           className={({ isActive}) =>
-           `ml-5 ${isActive ? "active" : "" }  `
+           `ml-5 ${isActive ? "underline" : "" }  `
           }
           to="/about"
         >
@@ -26,7 +28,7 @@ const Navbar = () => {
         </NavLink>
         <NavLink
           className={({ isActive}) =>
-            `ml-5 ${isActive ? "active" : "" }  `
+            `ml-5 ${isActive ? "underline" : "" }  `
            }
           to="/catering"
         >
@@ -34,7 +36,7 @@ const Navbar = () => {
         </NavLink>
         <NavLink
           className={({ isActive}) =>
-            `ml-5 ${isActive ? "active" : "" }  `
+            `ml-5 ${isActive ? "underline" : "" }  `
            }
           to="/quote"
         >
@@ -42,7 +44,7 @@ const Navbar = () => {
         </NavLink>
         <NavLink
           className={({ isActive}) =>
-            `ml-5 ${isActive ? "active" : "" }  `
+            `ml-5 ${isActive ? "underline" : "" }  `
            }
           to="/contact"
         >
