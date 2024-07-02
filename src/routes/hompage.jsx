@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom'
 
 const Homepage = () => {
   return (
-    <section className='font-sans flex justify-center items-center align-middle mt-10'>
-        <div className='p-5 lg:w-[50%] md:w-[30%] sm:w-[80%]'>
-          <h1 className='text-4xl font-black text-gray-900' >Welcome to Suleman Catering Services </h1>
+    <section className='font-sans flex lg:flex-row md:flex-col-reverse sm:flex-col-reverse justify-center items-center align-middle mt-10'>
+        <div className='p-5 lg:w-[50%] md:w-[80%] sm:w-[90%]'>
+          <h1 className='text-4xl font-serif text-gray-900' >Welcome to Suleman Catering Services </h1>
         
           <p className='italic text-lg text-gray-700 mt-5'><span className='text-3xl'>"</span> At Suleman Caters, we bring a blend of culinary mastery and exceptional service to cater to your every event need in Rawalpindi. Whether you're planning a 
           wedding, corporate gathering, or a special celebration, 

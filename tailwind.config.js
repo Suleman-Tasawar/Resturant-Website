@@ -6,14 +6,11 @@ export default {
   ],
   theme: {
     screens: {
-      'sm': '480px',
-      'md': '1024px',
-      'lg': '1280px',
+      'sm': '200px',
+      'md': '768px',
+      'lg': '900px',
     },
     extend: {
-      backgroundImage:{
-        hero:"public\assets\robert-mathews-xXaLfz6V9rQ-unsplash.jpg"
-      }
     },
   },
   plugins: [],

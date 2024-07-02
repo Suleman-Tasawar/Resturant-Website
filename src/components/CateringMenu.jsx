@@ -2,7 +2,7 @@ import React from 'react'
 
 const CateringMenu = ({EventName,Starters,StarterItems,Main,MainItems,Bread,BreadItems,Desserts,DessertItems,Drinks,DrinkItems}) => {
   return (
-    <div className=' text-gray-800 p-5 font-serif lg:w-[300px] cursor-grabbing md:w-[300px] sm:ww-[200px] shrink-0 shadow-md'>
+    <div className=' text-gray-800 p-5 font-serif lg:w-[20%] cursor-grabbing md:w-[25%] sm:w-[200px] shrink-0 shadow-md'>
         <h1 className='text-2xl font-bold'>{EventName}</h1>
         <div className='mt-5'>
             <h3 className='text-lg font-bold '>{Starters}:</h3>

@@ -45,7 +45,7 @@ const Catering = () => {
 };
   return (
     <section className="mt-10 font-serif">
-      <div className="text-center">
+      <div className="text-center sm:p-5">
         <h1 className="text-3xl text-gray-800">Take a look at our Menu</h1>
         <p className="mt-5 text-lg text-gray-700">
           We have a wide variety of menues available based on different type of
@@ -53,7 +53,7 @@ const Catering = () => {
         </p>
       </div>
 
-      <div className="mt-10 flex lg:flex-row md:flex-row  sm:flex-col sm:justify-center  justify-evenly gap-5">
+      <div className="mt-10 flex lg:flex-row md:flex-row  sm:flex-col sm:items-center  justify-evenly gap-5">
         <MenuCard
           Img="\assets\BM2.jpg"
           Title="Weading Catering"
@@ -75,37 +75,33 @@ const Catering = () => {
       <div>
         <div>
           {/*Catering Options Button*/}
-          <div className="mt-5 flex justify-center">
+          <div className="mt-5 flex justify-center sm:flex-col sm:items-center">
           <button
               onClick={() => filterOptions("All")}
-              value="Weading Events"
-              className="w-[150px] h-[35px] bg-blue-950 text-white rounded-md"
+              className="ml-2 w-[80px] h-[35px] bg-blue-950 text-white rounded-md"
             >
-            All Events
+            All
             </button>
             <button
               onClick={() => filterOptions('Wedding Menu')}
-              value="Weading Events"
-              className="w-[150px] h-[35px] bg-blue-950 text-white rounded-md"
+              className="ml-2 w-[100px] h-[35px] bg-blue-950 text-white rounded-md"
             >
-              Weading Events
+              Weading
             </button>
             <button
               onClick={() => filterOptions('Birthday Menu')}
-              value="Birthday Events"
-              className="ml-5 w-[150px] h-[35px] bg-blue-950 text-white rounded-md"
+              className="ml-5 w-[100px] h-[35px] bg-blue-950 text-white rounded-md"
             >
-              Birthday Event
+              Birthday
             </button>
             <button
               onClick={() => filterOptions('Corporate Event Menu')}
-              value="Corporate Events"
-              className="ml-5 w-[150px] h-[35px] bg-blue-950 text-white rounded-md"
+              className="ml-5 w-[100px] h-[35px] bg-blue-950 text-white rounded-md"
             >
-              Corporate Event
+              Corporate
             </button>
           </div>
-          <div className="mt-10 flex lg:flex-row md:flex-col sm:flex-col justify-evenly items-center">
+          <div className="mt-10 flex lg:flex-row md:flex-row sm:flex-col justify-evenly items-center">
             {filteredServices
               ? (filteredServices.map((services, index) => (
                   <CateringMenu
