@@ -10,7 +10,6 @@ const CateringMenu = ({EventName,Starters,StarterItems,Main,MainItems,Bread,Brea
                 StarterItems.map((starters,index)=>(
                     <li key={index}>{starters}</li>
                 ))
-                
                 }
             </ul>
         </div>

@@ -9,6 +9,7 @@ import About from './routes/about';
 import Catering from './routes/catering';
 import Quote from './routes/quote';
 import Contact from './routes/contact';
+import Login from './routes/login';
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/catering" element={<Catering />} />
         <Route path="/quote" element={<Quote />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </BrowserRouter>
   );

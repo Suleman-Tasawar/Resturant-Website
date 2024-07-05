@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
-    <div className="container mx-auto py-8 px-4">
+    <section className="container mx-auto py-8 px-4">
       <div>
-        <img className='sm:w-[100%] sm:h-[100%]  mx-auto' src="\assets\catering-buffet (1).jpg" alt="about us" />
+        <img className='w-[100%] h-[100%]  mx-auto' src="\assets\catering-buffet (1).jpg" alt="about us" />
       </div>
       <div className="max-w-3xl mx-auto">
         <h2 className="text-3xl font-bold mb-4 text-center">About Us</h2>
@@ -52,7 +52,7 @@ const About = () => {
         </div>
 
       </div>
-    </div>
+    </section>
   );
 };
 

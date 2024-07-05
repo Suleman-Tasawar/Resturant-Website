@@ -210,9 +210,3 @@ const  cateringMenus = [
   ];
 
 export default cateringMenus
-  
-//   // Example usage:
-//   console.log(cateringMenus[0].event); // Output: Wedding Menu
-//   console.log(cateringMenus[0].menu[0].category); // Output: Starters
-//   console.log(cateringMenus[0].menu[0].dishes); // Output: ["Samosas", "Pakoras", "Seekh Kebabs", "Reshmi Kebabs", "Chicken Tikka"]
-  
