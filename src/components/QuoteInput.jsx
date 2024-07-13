@@ -1,6 +1,6 @@
 import React from 'react';
 
-const QuoteInput = ({ property, isItem, onChange, fieldName, register, errors,isMail}) => {
+const QuoteInput = ({ property, onChange, fieldName, register, errors,isMail,placeholder}) => {
 
   return (
     <div className='mt-2'>
@@ -8,8 +8,8 @@ const QuoteInput = ({ property, isItem, onChange, fieldName, register, errors,is
         type={isMail ? "email":"text"}
         onChange={onChange}
         name={fieldName}
-        className='lg:w-[70%] md:w-[90%] sm:w-[70%] h-[35px] outline-none border border-gray-800 rounded-[5px]'
-        placeholder={`${property} ${isItem ? "Item" : ""}`}
+        className='lg:w-[70%] md:w-[90%] sm:w-[120%] h-[35px] outline-none border border-gray-800 rounded-[3px]'
+        placeholder={placeholder? placeholder: `${property}`}
         {...register(property, { required: true})}
       />
       {errors && errors[property] && ( 

@@ -11,9 +11,9 @@ const Contact = () => {
     const sendEmail = () => {
   
       emailjs
-        .sendForm('service_bt2vgoj', 'template_2qoinnd', form.current, {
-          publicKey: 'Kul8DNTM4QoPR2fhL',
-        })
+      .sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_MSG_ID, form.current, {
+        publicKey: import.meta.env.VITE_PUBLIC_KEY
+      })
         .then(
           () => {
             setResponce("Message Send")
@@ -32,10 +32,10 @@ const Contact = () => {
       <form ref={form} className='w-[60%]' onSubmit={handleSubmit(sendEmail)}>
         {responce&& <p className='text-green-400 text-sm'>{responce}</p>}
         {errorMessage&& <p className='text-green-400 text-sm'>{errorMessage}</p>}
-        <QuoteInput property='name' isItem={false} fieldName='name' register={register} errors={errors}/>
-        <QuoteInput property='email' isItem={false} fieldName='email' register={register} errors={errors} isMail = {true}/>
-        <QuoteInput property='info' isItem={false} fieldName='contact' register={register} errors={errors} isText = {true}/>
-        <div className='mt-5'><button className='w-[200px] h-[35px] bg-gray-900 text-white rounded-md hover:bg-gray-800 transition-colors'>Send</button></div>
+        <QuoteInput property='name' isItem={false} fieldName="name"  placeholder='Enter your name here' register={register} errors={errors}/>
+        <QuoteInput property='email' isItem={false} fieldName="email" placeholder='Enter your email here' register={register} errors={errors} isMail = {true}/>
+        <QuoteInput property='info' isItem={false} fieldName="contact" placeholder='Enter a berief message here' register={register} errors={errors} isText = {true}/>
+        <div className='mt-5 sm:mr-5'><button className='w-[200px] h-[35px] bg-gray-900 text-white rounded-md hover:bg-gray-800 transition-colors'>Send</button></div>
       </form>
     </section>
   )

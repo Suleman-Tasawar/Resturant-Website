@@ -78,25 +78,25 @@ const Catering = () => {
           <div className="mt-5 flex justify-center lg:flex-row md:flex-row sm:flex-col sm:items-center">
           <button
               onClick={() => filterOptions("All")}
-              className="ml-2 w-[80px] h-[35px] bg-blue-950 text-white rounded-md"
+              className="ml-2 w-[80px] h-[35px] lg:mt-0 md:mt-5 sm:mt-5 bg-blue-950 text-white rounded-md"
             >
             All
             </button>
             <button
               onClick={() => filterOptions('Wedding Menu')}
-              className="ml-2 w-[100px] h-[35px] bg-blue-950 text-white rounded-md"
+              className="ml-2 w-[100px] h-[35px] lg:mt-0 md:mt-5 sm:mt-5 bg-blue-950 text-white rounded-md"
             >
               Weading
             </button>
             <button
               onClick={() => filterOptions('Birthday Menu')}
-              className="ml-5 w-[100px] h-[35px] bg-blue-950 text-white rounded-md"
+              className="ml-5 w-[100px] h-[35px] lg:mt-0 md:mt-5 sm:mt-5 bg-blue-950 text-white rounded-md"
             >
               Birthday
             </button>
             <button
               onClick={() => filterOptions('Corporate Event Menu')}
-              className="ml-5 w-[100px] h-[35px] bg-blue-950 text-white rounded-md"
+              className="ml-5 w-[100px] h-[35px] lg:mt-0 md:mt-5 sm:mt-5 bg-blue-950 text-white rounded-md"
             >
               Corporate
             </button>

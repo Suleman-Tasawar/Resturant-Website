@@ -10,6 +10,8 @@ import Catering from './routes/catering';
 import Quote from './routes/quote';
 import Contact from './routes/contact';
 import Login from './routes/login';
+import AuthRequired from './routes/AuthRequired';
+import Admin from './routes/admin';
 
 const App = () => {
   return (
@@ -17,11 +19,15 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Hompage />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/catering" element={<Catering />} />
-        <Route path="/quote" element={<Quote />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="about" element={<About />} />
+        <Route path="catering" element={<Catering />} />
+        <Route path="quote" element={<Quote />} />
+        <Route path="contact" element={<Contact />} />
+        <Route path="login" element={<Login />} />
+        <Route  element={<AuthRequired/>} >
+          <Route path='admin' element = {<Admin/>}/>
+        </Route>
+
       </Routes>
     </BrowserRouter>
   );
