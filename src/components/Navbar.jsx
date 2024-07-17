@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import { NavLink,Link } from "react-router-dom";
+import useStore from '../store/zustord'
 
 const Navbar = () => {
   const [toggler,setToggler] = useState(false)
+  const cateing = useStore((state)=>state.catering)
   return (
     <header className="sm:relative flex justify-center font-serif mt-5">
       <Link to="/">
         <div>
-          <h3 className="text-2xl  font-normal">Suleman Caters</h3>
+          <h3 className="text-2xl  font-semibold">Suleman Caters</h3>
         </div>
       </Link>
       <div onClick={()=>setToggler(!toggler)} className="lg:hidden md:block sm:block sm:ml-5 cursor-pointer">
@@ -64,6 +66,20 @@ const Navbar = () => {
           to="/admin"
         >
           Admin
+        </NavLink>
+        <NavLink
+          className={({ isActive}) =>
+            `ml-5 sm:mt-5 ${isActive ? "underline" : "" }  `
+           }
+          to="/checkout"
+        >
+            <div className="relative">
+              <img width="20" height="20" src="https://img.icons8.com/ios-filled/50/kitchen.png" alt="kitchen"/>
+          <span className="absolute top-1 left-6">
+            {cateing.length}
+          </span>
+              
+              </div>
         </NavLink>
       </nav>
     </header>

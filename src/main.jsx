@@ -12,6 +12,7 @@ import Contact from './routes/contact';
 import Login from './routes/login';
 import AuthRequired from './routes/AuthRequired';
 import Admin from './routes/admin';
+import Checkout from './routes/CheckOut';
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
         <Route path="quote" element={<Quote />} />
         <Route path="contact" element={<Contact />} />
         <Route path="login" element={<Login />} />
+        <Route path="checkout" element={<Checkout />} />
         <Route  element={<AuthRequired/>} >
           <Route path='admin' element = {<Admin/>}/>
         </Route>
